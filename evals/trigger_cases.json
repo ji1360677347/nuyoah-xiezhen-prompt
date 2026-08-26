@@ -1,28 +1,27 @@
 {
-  "recommended_threshold": 0.34,
+  "recommended_threshold": 0.5,
   "should_trigger": [
-    "为这个夏日海岛主题写一组可以直接生图的中文写真提示词。",
-    "参考这张人像图，拆解妆造、构图、动作和光线，再给我完整提示词。",
-    "给这套写真做五个同系列变体，保留成像机制但不要重复动作和构图。",
-    "把这个主题整理成系列母版，后面我要持续扩展整套写真。",
-    "给网页抽卡用，输出六到八行短促的写真关键词。",
-    "更新南鸢写真提示词 Skill 到最新版。",
-    "检查南鸢写真提示词 Skill 现在是什么版本。"
+    {"text": "帮我写一条完整的夏日果园写真 Prompt", "family": "detailed"},
+    {"text": "给我一套八张写真系列母版", "family": "series_master"},
+    {"text": "把这组照片拆成可复用的写真关键词", "family": "reverse"},
+    {"text": "给这套 Y2K 写真写五条同系列变体关键词链", "family": "variant"},
+    {"text": "写一份网页端写真抽卡关键词", "family": "draw_card"},
+    {"text": "我喜欢这套写真，换个人像去同一家店一样重新拍五张", "family": "production_reshoot"},
+    {"text": "照这组参考图的完整摄影企划，为原创女性重新设计新分镜并直接生图", "family": "production_reshoot"},
+    {"text": "用 $nuyoah-xiezhen-prompt 生成一组写真", "family": "explicit"}
   ],
   "should_not_trigger": [
-    "直接生成一张写真图片，不要提示词。",
-    "把这张照片里的人物抠出来并替换背景。",
-    "只评价这张人像拍得好不好，不需要生成提示词。",
-    "反推这张商品海报，给我文字层级和版式结构。",
-    "帮我写一篇关于写真行业的公众号文章。",
-    "把我安装的所有 Skill 都更新一下。",
-    "更新另一个图片反推 Skill，不要动写真提示词。"
+    {"text": "把公众号文章排版成微信 HTML", "family": "wechat"},
+    {"text": "生成一张产品信息图", "family": "infographic"},
+    {"text": "把这段视频剪成十五秒预告片", "family": "video_edit"},
+    {"text": "审计并修改这个 SKILL.md", "family": "skill_engineering"},
+    {"text": "总结这份 PDF", "family": "document"}
   ],
   "near_neighbor": [
-    "把一张参考图拆成跨品类通用的结构字段和色卡。",
-    "追溯这张图片里的文化元素，并向外扩展灵感。",
-    "直接修改人物妆容和服装，不需要文字提示词。",
-    "整理一组可以随机锁定的视觉原子词。",
-    "告诉我 Agent Skills 一般怎么更新，不要更新任何东西。"
+    {"text": "只分析这组写真，不要写 Prompt 也不要生图", "family": "analysis_only"},
+    {"text": "把原照片里的人直接换脸，背景像素完全不动", "family": "image_edit"},
+    {"text": "查一下这位摄影师最近的作品", "family": "web_research"},
+    {"text": "给这套写真做后期调色，不要重新生图", "family": "photo_edit"},
+    {"text": "把已经生成的图片同步进 Eagle", "family": "archive_only"}
   ]
 }
